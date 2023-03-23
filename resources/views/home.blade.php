@@ -14,7 +14,7 @@
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Crea</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada porta tellus nec bibendum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas eget turpis ac neque pharetra scelerisque. Donec sed justo nec risus placerat gravida. </p>
+                        <p class="card-text">Crea il tuo wall personalizzato e gioca insieme ai tuoi amici!</p>
                         <a href="#" class="btn btn-primary">Crea adesso</a>
                     </div>
                 </div>
@@ -23,7 +23,7 @@
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Unisciti</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada porta tellus nec bibendum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas eget turpis ac neque pharetra scelerisque. Donec sed justo nec risus placerat gravida. </p>
+                        <p class="card-text">Unisciti al wall di un altro utente e inizia a divertirti! </p>
                         <a href="#" class="btn btn-primary">Unisciti adesso</a>
                     </div>
                 </div>

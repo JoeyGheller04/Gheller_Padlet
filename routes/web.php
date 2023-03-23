@@ -1,7 +1,10 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\WallsController;
 use Illuminate\Support\Facades\Route;
+
+use App\Models\Walls;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +17,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+/******************************************************************************/
+/**************** HOME ********************************************************/
+/******************************************************************************/
 Route::get('/', function () {
     return view('home');
 })->name('home');
@@ -23,7 +29,23 @@ Route::get('home', function () {
     return view('home');
 })->name('home');
 
+/******************************************************************************/
+/**************** WALL ********************************************************/
+/******************************************************************************/
 
+Route::get('wall_creation', function () {
+
+    return view('wall_creation');
+})->name('wall_creation');
+
+
+Route::get('wall_selection', [WallsController::class, 'index'])->name('wall_selection');
+
+Route::get('wal/{id}', [WallsController::class, 'getWall'])->name('wall');
+
+/******************************************************************************/
+/**************** AUTH ********************************************************/
+/******************************************************************************/
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');

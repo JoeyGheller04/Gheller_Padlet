@@ -15,7 +15,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Crea</h5>
                         <p class="card-text">Crea il tuo wall personalizzato e gioca insieme ai tuoi amici!</p>
-                        <a href="#" class="btn btn-primary">Crea adesso</a>
+                        <a href="{{ route('wall_creation')}}" class="btn btn-primary">Crea adesso</a>
                     </div>
                 </div>
             </div>
@@ -24,7 +24,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Unisciti</h5>
                         <p class="card-text">Unisciti al wall di un altro utente e inizia a divertirti! </p>
-                        <a href="#" class="btn btn-primary">Unisciti adesso</a>
+                        <a href="{{ route('wall_selection')}}" class="btn btn-primary">Unisciti adesso</a>
                     </div>
                 </div>
             </div>

@@ -10,4 +10,10 @@ class Walls extends Model
     use HasFactory;
 
     protected $table = 'walls';
+
+    protected $fillable = [
+        'user_id',
+        'name',
+        'description',
+    ];
 }

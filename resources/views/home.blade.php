@@ -7,7 +7,6 @@
 
     @include('partials.navbar')
 
-    <!-- Contenuto principale -->
     <div class="container-fluid mt-5 pt-5">
         <div class="row">
             <div class="col-md-6">

@@ -33,15 +33,18 @@ Route::get('home', function () {
 /**************** WALL ********************************************************/
 /******************************************************************************/
 
+//Wall Creation
 Route::get('wall_creation', function () {
 
     return view('wall_creation');
 })->name('wall_creation');
 
+Route::post('wall_creation', [WallsController::class, 'createWall'])->name('create_wall');
 
+//Wall selection
 Route::get('wall_selection', [WallsController::class, 'index'])->name('wall_selection');
 
-Route::get('wal/{id}', [WallsController::class, 'getWall'])->name('wall');
+Route::get('wall/{id}', [WallsController::class, 'getWall'])->name('wall');
 
 /******************************************************************************/
 /**************** AUTH ********************************************************/

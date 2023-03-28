@@ -7,24 +7,40 @@
 
     @include('partials.navbar')
 
-    <div class="row mb-2">
-        @foreach($walls as $wall)
-        <div class="col-md-6">
-            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                <div class="col p-4 d-flex flex-column position-static">
-                    <strong class="d-inline-block mb-2 text-primary">{{ $wall->name }}</strong>
-                    <!-- <h3 class="mb-0">{{ Str::limit($wall->title, 50, ' (...)') }}</h3>
-                    <div class="mb-1 text-muted">{{ $wall->created_at->diffForHumans() }}</div>
-                    <a href="{{ route('news-detail', $wall->id) }}" class="stretched-link">Continue reading</a>
-                    <p>{{ count($wall->comments) }} comments</p> -->
-                </div>
+    <div class="container-fluid">
+        <h1 class="text-center">Crea la tua pagina</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-5">
+                <form action="{{ route('create_wall') }}" method="POST">
+                    @csrf
+                    <!-- <img src="https://via.placeholder.com/350x150" class="img-fluid rounded mx-auto d-block" alt="Banner immagine"> -->
+                    <p class="text-center">Muro</p>
+                    <div class="form-group">
+                        <label for="title">Titolo:</label>
+                        <input type="text" class="form-control" id="title">
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Descrizione:</label>
+                        <textarea class="form-control" id="text" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="color">Colore:</label>
+                        <select class="form-control" id="color">
+                            <option>Blu</option>
+                            <option>Rosso</option>
+                            <option>Verde</option>
+                            <option>Giallo</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary ml-auto">Crea</button>
+                </form>
             </div>
         </div>
-        @endforeach
+    </div>
 
-
-        @include('partials.footer')
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    @include('partials.footer')
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 
 </html>

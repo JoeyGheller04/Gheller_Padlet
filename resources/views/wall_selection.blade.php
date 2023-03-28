@@ -16,7 +16,7 @@
                     <div class="card-body">
                         <h5 class="card-title">{{ $wall->name }}</h5>
                         <p class="card-text">{{ $wall->description }}</p>
-                        <button type="button" class="btn btn-primary ml-auto" href="{{ route('wall', $wall->id)}}">Unisciti</button>
+                        <a class="btn btn-primary ml-auto" href="{{ route('wall', $wall->id)}}">Unisciti</a>
                     </div>
                 </div>
             </div>

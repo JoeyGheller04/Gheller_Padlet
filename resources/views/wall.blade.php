@@ -15,7 +15,7 @@
                 <div class="col-md-2">
                     <div class="card" style="margin: 20px 0;">
                         <div class="card-body">
-                            <p class="card-title">{{ $post->title }}</p>
+                            <h5 class="card-title">{{ $post->title }}</h5>
                             <p class="card-text">{{ $post->text }}</p>
                         </div>
                     </div>
@@ -24,26 +24,38 @@
             </div>
         </div>
 
-        <div class="container" style="background-color: #f8f9fa; padding: 10px;">
+
+    </div>
+
+    <div class="fixed-bottom" style="background-color: #B2AEAF; min-width: 100%;">
+        <div class="container" style="padding:10px">
             <div class="row">
-                <div class="col-md-12 sticky-top">
-                    <form action="#" class="comment-form">
+                <div class="col-md-12 sticky-top ">
+                    <form action="{{ route('add_post', 1) }}" class="comment-form" method="post">
+                        @csrf
                         <div class="form-group">
-                            <label for="title">Titolo</label>
+                            <label class="text-white" for="title">Titolo</label>
                             <input type="text" class="form-control" id="title" name="title">
                         </div>
                         <div class="form-group">
-                            <label for="text">Commento</label>
+                            <label class="text-white" for="text">Commento</label>
                             <textarea class="form-control" id="text" name="text"></textarea>
                         </div>
+                        <input type="hidden" id="wall_id" name="wall_id" value="{{ $wall }}"/>
+                        <input type="hidden" id="user_id" name="user_id" value="{{ 1 }}"/>
+
                         <button type="submit" class="btn btn-primary">Invia</button>
                     </form>
                 </div>
             </div>
         </div>
+        <footer class="bg-dark text-center text-white">
+            <div class="container p-4">
+                <p>&copy; Padlet Joey Gheller 5CII</p>
+            </div>
+        </footer>
     </div>
 
-    @include('partials.footer')
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>

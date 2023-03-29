@@ -4,10 +4,15 @@ namespace App\Http\Controllers;
 
 use App\Models\Posts;
 use App\Models\Walls;
+
 use Illuminate\Support\Facades\DB;
+use Illuminate\Http\Request;
 use Illuminate\View\View;
-use Symfony\Component\HttpFoundation\Session\Session;
-use Symfony\Component\HttpFoundation\Request;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Mail;
 
 class WallsController extends Controller
 {
@@ -23,43 +28,57 @@ class WallsController extends Controller
 
     public function getWall($id)
     {
-    	$wall = Walls::find($id);
 
         $posts = Posts::where('wall_id', $id)->get();
 
     	return view('wall', [
+            'wall' => $id,
             'posts' => $posts
     	]);
     }
 
     public function createWall(Request $request)
     {
-        // $validated = $request->validate([ 
-        //     'news_id' => 'required|max:50',
-        //     'comment_id' => 'required|max:50',
-        //     'like' => 'required',
-        // ]);
-
-        // $user = Session::get('user');
-        // $validated['user_id'] = $user['user_id'];
-
-        // $input = $request->only(['user_id', 'news_id', 'comment_id', 'like']);
-        
-        // Walls::create($input);
-        $sas = Walls::insert([
-            'user_id' => 1,
-            'name' => 'test',
-            'description' => 'test'
+        $validated = $request->validate([
+            'user_id' => 'required',
+            'name' => 'required',
+            'description' => 'required|max:200'
         ]);
 
-        DB::table('walls')->insert(
-            ['user_id' => 1,
-            'name' => 'test',
-            'description' => 'test']
+        $input = $request->only(['user_id', 'name', 'description']);
+
+        DB::table('walls')->insert([
+            'user_id' => 1,
+            'name' => $input['name'],
+            'description' => $input['description']
+        ]);
+
+        $wall = DB::table('walls')->orderBy('id', 'desc')->first();
+        $id = $wall->id;
+
+        return redirect()->route('wall', ['id' => $id]);
+    }
+
+    public function createPost(Request $request)
+    {
+        $validated = $request->validate([
+            'user_id' => 'required',
+            'wall_id' => 'required', 
+            'title' => 'required|max:40',
+            'text' => 'required|max:200'
+        ]);
+
+        $input = $request->only(['user_id', 'wall_id', 'title', 'text']);
+        
+        $id = $input['wall_id'];
+
+        DB::table('posts')->insert([
+            'user_id' => 1,
+            'wall_id' => $input['wall_id'],
+            'title' => $input['title'],
+            'text' => $input['text']]
         );
 
-        $id = DB::table('walls')->orderBy('created_at', 'desc')->first();
-
-        return view('wall/' . $id);
+        return redirect()->route('wall', ['id' => $id]);
     }
 }

@@ -8,30 +8,30 @@
     @include('partials.navbar')
 
     <div class="container-fluid">
-        <h1 class="text-center">Crea la tua pagina</h1>
+        <h1 class="text-center">Crea il tuo Wall</h1>
         <div class="row justify-content-center">
             <div class="col-md-5">
-                <form action="{{ route('create_wall') }}" method="POST">
+                <form action="{{ route('create_wall', 1) }}" method="POST">
                     @csrf
                     <!-- <img src="https://via.placeholder.com/350x150" class="img-fluid rounded mx-auto d-block" alt="Banner immagine"> -->
-                    <p class="text-center">Muro</p>
                     <div class="form-group">
-                        <label for="title">Titolo:</label>
-                        <input type="text" class="form-control" id="title">
+                        <label for="name">Titolo:</label>
+                        <input type="text" class="form-control" id="name" name="name">
                     </div>
                     <div class="form-group">
                         <label for="description">Descrizione:</label>
-                        <textarea class="form-control" id="text" rows="3"></textarea>
+                        <textarea class="form-control" id="description" name="description" rows="3"></textarea>
                     </div>
-                    <div class="form-group">
+                    <input type="hidden" id="user_id" name="user_id" value="{{ 1 }}"/>
+                    <!-- <div class="form-group">
                         <label for="color">Colore:</label>
                         <select class="form-control" id="color">
                             <option>Blu</option>
                             <option>Rosso</option>
                             <option>Verde</option>
                             <option>Giallo</option>
-                        </select>
-                    </div>
+                            </select>
+                    </div> -->
                     <button type="submit" class="btn btn-primary ml-auto">Crea</button>
                 </form>
             </div>

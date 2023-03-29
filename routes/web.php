@@ -46,6 +46,9 @@ Route::get('wall_selection', [WallsController::class, 'index'])->name('wall_sele
 
 Route::get('wall/{id}', [WallsController::class, 'getWall'])->name('wall');
 
+//Post
+Route::post('wall/{id}', [WallsController::class, 'createPost'])->name('add_post');
+
 /******************************************************************************/
 /**************** AUTH ********************************************************/
 /******************************************************************************/

@@ -13,6 +13,7 @@ use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Mail;
+use MyEvent;
 
 class WallsController extends Controller
 {
@@ -78,6 +79,9 @@ class WallsController extends Controller
             'title' => $input['title'],
             'text' => $input['text']]
         );
+
+        broadcast(new MyEvent("sas"))->to('NewPost-channel');
+
 
         return redirect()->route('wall', ['id' => $id]);
     }

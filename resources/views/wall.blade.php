@@ -68,16 +68,16 @@
         var channel = pusher.subscribe('NewPost-channel');
         channel.bind('NewPost-event', function(data) {
 
-            alert(JSON.stringify(data));
+            // alert(JSON.stringify(data));
 
             // const newPost = '<div class="col-md-2"><div class="card" style="margin: 20px 0;"><div class="card-body"><h5 class="card-title">'+data+'</h5><p class="card-text">sas</p></div></div></div>';
 
             // Document.getElementById("card-container").appendChild(newPost);
-            // const para = document.createElement("p");
-            // const node = document.createTextNode("This is a paragraph.");
+            const para = document.createElement("p");
+            const node = document.createTextNode("This is a paragraph.");
 
-            // para.appendChild(node);
-            // document.getElementById("card-container").appendChild(newPost);
+            para.appendChild(node);
+            document.getElementById("card-container").appendChild(para);
         });
     </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>

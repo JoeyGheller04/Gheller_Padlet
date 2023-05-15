@@ -12,6 +12,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dapibus tempor ma
 
 ## Tecnologie utilizzate
 
+- **Python**: Linguaggio di programmazione versatile e adatto a numerosi ambiti, dallo sviluppo web all'analisi dati.
 - **Laravel**: Framework PHP per lo sviluppo web.
 - **Laravel Breeze**: Pacchetto di autenticazione predefinito per Laravel.
 - **Tailwind**: Libreria CSS per la creazione di interfacce moderne.
@@ -21,8 +22,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dapibus tempor ma
 - **PHP**: Linguaggio di scripting per lo sviluppo web.
 - **JavaScript**: Linguaggio di scripting per la programmazione lato client.
 
-## Link utili
+## Link alla Presentazione
+- Presentazione: 
 
+## Link alle Documentazioni
 - Documentazione di Laravel: [https://laravel.com/docs](https://laravel.com/docs)
 - Documentazione di Tailwind: [https://tailwindcss.com/docs](https://tailwindcss.com/docs)
 - Documentazione di jQuery: [https://jquery.com](https://jquery.com)

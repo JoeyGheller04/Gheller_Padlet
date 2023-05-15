@@ -2,7 +2,7 @@
 
 > Breve descrizione del progetto.
 
-GrenniCam è un progetto sociale finalizzato a migliorare la vita delle persone. Il progetto mira a sfruttare le capacità avanzate di una telecamera e di uno smartwatch per monitorare costantemente lo stato degli anziani e delle persone con patologie mediche, avvisando i servizi di emergenza in caso di cadute o altri problemi legati alla salute. Nel frattempo lo smartwatch viene utilizzato per misurare la frequenza cardiaca e i livelli di ossigeno. L'obiettivo del progetto GrenniCam è combinare queste due tecnologie innovative per creare un sistema completo in grado di monitorare persone fragili e prevenire situazioni spiacevoli, o di permettere a personale specializzato di agire tempestivamente in caso avvengano. 
+GrenniCam è un progetto sociale finalizzato a migliorare la vita delle persone. Il progetto mira a sfruttare le capacità avanzate di una telecamera e di uno smartwatch per monitorare costantemente lo stato degli anziani e delle persone con patologie mediche. La telecamera si occupa di avvisare i servizi di emergenza in caso di cadute mentre lo smartwatch viene utilizzato per misurare la frequenza cardiaca e i livelli di ossigeno. L'obiettivo del progetto GrenniCam è combinare queste due tecnologie per creare un sistema completo in grado di monitorare persone fragili e prevenire situazioni spiacevoli, o di permettere a personale specializzato di agire tempestivamente in caso avvengano. 
 
 ## Membri del gruppo
 

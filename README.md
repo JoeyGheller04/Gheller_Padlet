@@ -27,7 +27,5 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dapibus tempor ma
 
 ## Link alle Documentazioni
 - Documentazione di Laravel: [https://laravel.com/docs](https://laravel.com/docs)
-- Documentazione di Tailwind: [https://tailwindcss.com/docs](https://tailwindcss.com/docs)
-- Documentazione di jQuery: [https://jquery.com](https://jquery.com)
 - Documentazione di Paho: [https://www.eclipse.org/paho](https://www.eclipse.org/paho)
 - Documentazione di WebSocket: [https://developer.mozilla.org/en-US/docs/Web/API/WebSocket](https://pusher.com/websockets/)

@@ -2,13 +2,13 @@
 
 > Breve descrizione del progetto.
 
-GrenniCam è un progetto sociale finalizzato a migliorare la vita delle persone. Il progetto mira a sfruttare le capacità avanzate di una telecamera e di uno smartwatch per monitorare costantemente lo stato degli anziani e delle persone con patologie mediche. La telecamera si occupa di avvisare i servizi di emergenza in caso di cadute mentre lo smartwatch viene utilizzato per misurare la frequenza cardiaca e i livelli di ossigeno. L'obiettivo del progetto GrenniCam è combinare queste due tecnologie per creare un sistema completo in grado di monitorare persone fragili e prevenire situazioni spiacevoli, o di permettere a personale specializzato di agire tempestivamente in caso avvengano. 
+GrenniCam è un progetto sociale finalizzato a migliorare la vita delle persone. Il progetto mira a sfruttare le capacità avanzate di una telecamera e di uno smartwatch per monitorare costantemente lo stato degli anziani e delle persone con patologie mediche. La telecamera si occupa di avvisare i servizi di emergenza in caso di cadute mentre lo smartwatch viene utilizzato per misurare la frequenza cardiaca e i livelli di ossigeno. L'obiettivo del progetto GrenniCam è combinare queste due tecnologie per creare un sistema completo in grado di monitorare persone fragili e prevenire situazioni spiacevoli, o di permettere a personale specializzato di agire tempestivamente in caso avvengano.
 
 ## Membri del gruppo
 
-- Bergamasco Andrea ([GitHub](https://github.com/bergamasco02))
-- Gheller Joey ([GitHub](https://github.com/JoeyGheller04))
-- Mukund Gupta ([GitHub](https://github.com/gupta-mukund))
+- [Bergamasco Andrea](https://github.com/bergamasco02)
+- [Gheller Joey](https://github.com/JoeyGheller04)
+- [Mukund Gupta](https://github.com/gupta-mukund)
 
 ## Tecnologie utilizzate
 
@@ -22,10 +22,12 @@ GrenniCam è un progetto sociale finalizzato a migliorare la vita delle persone.
 - **PHP**: Linguaggio di scripting per lo sviluppo web.
 - **JavaScript**: Linguaggio di scripting per la programmazione lato client.
 
-## Link alla Presentazione
-- Presentazione: 
+## Presentazione
 
-## Link alle Documentazioni
-- Documentazione di Laravel: [https://laravel.com/docs](https://laravel.com/docs)
-- Documentazione di Paho: [https://www.eclipse.org/paho](https://www.eclipse.org/paho)
-- Documentazione di WebSocket: [https://developer.mozilla.org/en-US/docs/Web/API/WebSocket](https://pusher.com/websockets/)
+- [Link alla presentazione del progetto](https://example.com)
+
+## Documentazioni
+
+- [Documentazione di Laravel](https://laravel.com/docs)
+- [Documentazione di Paho](https://www.eclipse.org/paho)
+- [Documentazione di WebSocket](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket)

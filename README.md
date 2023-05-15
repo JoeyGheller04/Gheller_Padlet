@@ -1,14 +1,21 @@
-# Grennicam
+<h1 align="center">
+  <br>
+  Grennicam
+  <br>
+</h1>
+<p align="center">
+  <em>Breve descrizione del progetto.</em>
+</p>
 
-> Breve descrizione del progetto.
-
-GrenniCam è un progetto sociale finalizzato a migliorare la vita delle persone. Il progetto mira a sfruttare le capacità avanzate di una telecamera e di uno smartwatch per monitorare costantemente lo stato degli anziani e delle persone con patologie mediche. La telecamera si occupa di avvisare i servizi di emergenza in caso di cadute mentre lo smartwatch viene utilizzato per misurare la frequenza cardiaca e i livelli di ossigeno. L'obiettivo del progetto GrenniCam è combinare queste due tecnologie per creare un sistema completo in grado di monitorare persone fragili e prevenire situazioni spiacevoli, o di permettere a personale specializzato di agire tempestivamente in caso avvengano.
+<p align="center">
+  Grennicam è un progetto sociale finalizzato a migliorare la vita delle persone. Il progetto mira a sfruttare le capacità avanzate di una telecamera e di uno smartwatch per monitorare costantemente lo stato degli anziani e delle persone con patologie mediche. La telecamera si occupa di avvisare i servizi di emergenza in caso di cadute mentre lo smartwatch viene utilizzato per misurare la frequenza cardiaca e i livelli di ossigeno. L'obiettivo del progetto Grennicam è combinare queste due tecnologie per creare un sistema completo in grado di monitorare persone fragili e prevenire situazioni spiacevoli, o di permettere a personale specializzato di agire tempestivamente in caso avvengano.
+</p>
 
 ## Membri del gruppo
 
-- [Bergamasco Andrea](https://github.com/bergamasco02)
-- [Gheller Joey](https://github.com/JoeyGheller04)
-- [Mukund Gupta](https://github.com/gupta-mukund)
+- Bergamasco Andrea ([GitHub](https://github.com/bergamasco02))
+- Gheller Joey ([GitHub](https://github.com/JoeyGheller04))
+- Mukund Gupta ([GitHub](https://github.com/gupta-mukund))
 
 ## Tecnologie utilizzate
 

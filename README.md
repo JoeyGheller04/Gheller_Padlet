@@ -6,7 +6,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dapibus tempor ma
 
 ## Membri del gruppo
 
-- Bergamasco Andrea ([GitHub](https://github.com/bergamascoandrea))
+- Bergamasco Andrea ([GitHub](https://github.com/bergamasco02))
 - Gheller Joey ([GitHub](https://github.com/JoeyGheller04))
 - Mukund Gupta ([GitHub](https://github.com/gupta-mukund))
 
@@ -27,4 +27,4 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dapibus tempor ma
 - Documentazione di Tailwind: [https://tailwindcss.com/docs](https://tailwindcss.com/docs)
 - Documentazione di jQuery: [https://jquery.com](https://jquery.com)
 - Documentazione di Paho: [https://www.eclipse.org/paho](https://www.eclipse.org/paho)
-- Documentazione di WebSocket: [https://developer.mozilla.org/en-US/docs/Web/API/WebSocket](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket)
+- Documentazione di WebSocket: [https://developer.mozilla.org/en-US/docs/Web/API/WebSocket](https://pusher.com/websockets/)
